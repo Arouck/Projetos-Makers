@@ -1,0 +1,53 @@
+body {
+    text-align: center;
+    background-color: #745cc1;
+    font-family: 'Roboto', sans-serif;
+}
+
+input {
+    font-weight: lighter;
+    display: block;
+    width: 75%;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-width: 1px;
+    background: none;
+    margin: 59px;
+    margin-left: 12.5%;
+    font-size: 18px;
+}
+
+img {
+    margin-bottom: 58px;
+    margin-top: 64px;
+}
+
+::placeholder {
+    color: #ffffff;
+    text-align: left;
+}
+
+button {
+    width: 75%;
+    background-color: #ffffff;
+    border: none;
+    color: #494949;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 40px;
+    box-shadow: 0 3px 5px 0;
+}
+
+.esqueci {
+    color: #ffffff;
+    text-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
