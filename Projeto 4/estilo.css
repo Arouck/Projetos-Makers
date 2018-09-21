@@ -1,25 +1,47 @@
-* {
-    margin: 0;
+ul {
     padding: 0;
 }
 
-.selecionado {
-    margin: 90px;
-}
-
-.p1, .p2, .p3 {
-    background-color: #27ae60;
+.feito {
     list-style-type: none;
-    width: 100%;
-    height: 90%;
-    margin-bottom: 5px;
+    background-color: #27ae60;
+    padding: 60px 0 60px 90px;
+    margin-bottom: 3px;
+    background-image: url('selecionado.png');
+    background-repeat: no-repeat;
+    background-position: -70px center;
 }
 
-.p4 {
+li:hover.feito {
+    background-color: #52be7f;
+}
+
+.naofeito {
+    list-style-type: none;
     background-color: #4a4a4a;
+    padding: 60px 0 60px 90px;
+    margin-bottom: 3px;
+    background-image: url('naoselecionado.png');
+    background-repeat: no-repeat;
+    background-position: -70px center;
+}
+
+li:hover.naofeito {
+    background-color: #6e6d6e;
 }
 
 a {
+    color: #ffffff;
     text-decoration: none;
-    color: inherit;
+    display: block;
+    background-image: url('seta.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    -webkit-fontsmoothing: antialiased;
+    height: 100%;
 }
