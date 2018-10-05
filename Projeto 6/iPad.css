@@ -1,6 +1,9 @@
 .container {
-    margin-left: 19%;
-    width: 960px;
+    margin-left: 9%;
+    margin-right: 9%;
+    width: 640px;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo {
@@ -31,6 +34,6 @@
     margin-right: 20px;
 }
 
-.container_foto {
+.imagens .container_foto {
     float: left;
 }
