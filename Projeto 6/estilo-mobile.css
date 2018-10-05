@@ -1,0 +1,28 @@
+.container {
+    margin: 7px;
+    /*background-color: red;*/
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.imagens h3{
+    margin-top: 5px;
+    margin-bottom: 47px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: medium;
+    color: #4a4a4a;
+    font-family: 'Roboto', sans-serif;
+    -webkit-fontsmoothing: antialiased;
+}
+
+.imagens img {
+    width: 100%;
+    height: 100%;
+}
