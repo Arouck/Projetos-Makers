@@ -1,191 +1,257 @@
-* {
-    font-family: 'Lato', sans-serif;
-    -webkit-fontsmoothing: antialiased;
+body {
+    font-family: 'Lato',sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 
-#Primeira {
-    background-image: url(fundo.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 828px;
-    background-color: blue;
-
+.container {
+    margin: 0 auto;
+    max-width: 1160px;
+    display: flex;
+    justify-content: space-between;
 }
 
-header span {
-    float: left;
-    margin-right: 5%;
-    margin-top: 30px;
-    font-size: 20px;
-    font-weight: 100;
-    color: #ffffff;
-}
-
-header img {
-    float: left;
-    margin-right: 27%;
-    margin-left: 20%;
-}
-
-header #container {
-    padding-top: 20px;
-    padding-bottom: 150px;
-}
-
-header #container div {
-    margin-top: 19px;
-    border: 1px solid #ffffff;
-    float: left;
-    width: 143px;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    font-size: 20px;
+.botao {
+    background-color: #ff3d7f;
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px;
     border-radius: 3px;
-    color: #ffffff;
+    box-shadow: 0px 6px 0px #a32751;
 }
 
-a {
-    color: inherit;
+
+
+header {
+    margin-bottom: -90px;
+}
+
+header h1 {
+    margin: 0px;
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    width: 177px;
+    height: 76px;
+    margin-top: 10px;
+}
+
+header h1 span {
+    visibility: hidden;
+}
+
+header nav li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 100px;
+}
+
+header nav ul {
+    margin: 0px;
+    padding-right: 50px;
+    margin-top: 25px;
+}
+
+header nav li:last-child {
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: 10px 30px 10px 30px;
+}
+
+header nav li a {
+    color: #fff;
+    font-size: 20px;
     text-decoration: none;
 }
 
-section #Titulo {
-    margin-left: 20%;
-    margin-top: 75px;
-    color: #ffffff;
+
+
+
+section#topo {
+    background-image: url(fundo.png);
+    background-size: cover;
+    height: 1000px;
+}
+
+section#topo .chamada {
+    margin-top: 300px;
+    color: #fff;
+    text-align: center;
+}
+
+section#topo .chamada h2 {
+    margin: 0px;
+    margin-bottom: 20px;
     font-size: 50px;
-    font-weight: 500;
+    font-weight: medium;
 }
 
-section #Sub {
-    color: #ffffff;
-    margin-left: 18%;
-    margin-top: 19px;
+section#topo .chamada p {
     font-size: 36px;
-    font-weight: 300;
+    font-weight: lighter;
+    margin: 0px;
+    margin-bottom: 20px;
 }
 
-#Saiba {
-    background-color: #ff3d7f;
-    width: 460px;
-    height: 88px;
-    margin-left: 17%;
-    margin-top: 33px;
-    box-shadow: 0 6px 0 0 #a32751;
-    border-radius: 3px;
-    text-align: center;
-    line-height: 80px;
+section#topo .chamada a {
+    text-decoration: none;
+    color: #fff;
     font-size: 36px;
-    font-weight: 300;
-    color: #ffffff;
+    font-weight: lighter;
 }
 
-#Segunda {
-    width: 100%;
-    height: 523px;
-    opacity: 0.8;
-    padding-top: 5%;
+
+
+section#conheca {
+    padding: 70px;
 }
 
-#Segunda img {
-    float: left;
-    margin-left: 20%;
-    margin-right: 7%;
+section#conheca .caixa {
+    padding: 60px;
+    padding-left: 150px;
+    padding-right: 170px;
 }
 
-#Segunda h2 {
+section#conheca .caixa h2 {
     font-size: 36px;
-    font-weight: bolder;
 }
 
-#Segunda .paragrafo {
-    width: 450px;
-    float: left;
+section#conheca .caixa p {
     font-size: 24px;
-    font-weight: 300;
+    margin-right: 20px;
 }
 
-#Segunda #quero {
-    float: left;    
-    margin-right: 30%;
-    background-color: #ff3d7f;
-    border-radius: 3px;
-    box-shadow: 0 6px 0 #a32751;
+section#conheca .caixa a {
+    text-decoration: none;
+    color: #fff;
     text-align: center;
-    line-height: 75px;
-    width: 290px;
-    height: 73px;
-    color: #ffffff;
-    font-size: 25px;
-    font-weight: 300;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 60%;
+    font-size: 30px;
 }
 
-#Terceira {
-    text-align: center;
-    background-color: #ebe8fb;;
-}
-
-.tudo {
-    width: 869px;
-    margin-left: 28%;
-    font-size: 24px;
-    font-weight: 300;
-}
-
-.pessoa {
-    font-weight: bold;
-    margin-top: -20px;
-}
-
-#caixa {
+section#depoimentos {
+    background-color: #ebe8fb;
     border-top: 3px solid #511099;
-    height: 100%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    text-align: center;
+    padding: 70px;
 }
 
-#Quarta {
+section#depoimentos .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+section#depoimentos .container img {
+    width: 150px;
+    height: 150px;
+}
+
+section#depoimentos .container p {
+    width: 80%;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+
+section#convite {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: url(fundo-convite.png);
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-    padding-top: 212px;
-    padding-bottom: 212px;
+    background-size: cover;
 }
 
-#Quarta div {
-    text-align: center;
-    height: 120px;
-    width: 641px;
-    margin-left: 34%;
-    background-color: #ffffff;
-    opacity: 0.89;
+section#convite .container {
+    flex-direction: column;
+    align-items: center;
 }
 
-#Quarta input {
-    border-width: 0px;
+section#convite .container form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    width: 55%;
+    display: flex;
+    border-radius: 3px;
+}
+
+section#convite .container input {
+    padding: 30px;
+    width: 70%;
+    background-color: transparent;
+    border: none;
     font-size: 24px;
-    font-weight: 400;
     color: #4a4a4a;
-    width: 461px;
-    margin-top: 44px;
 }
 
-#Quarta button {
-    background-color: inherit;
-    border-width: 0px;
+section#convite .container button {
+    background-image: url(botao-convite.png);
+    background-color: transparent;
+    border: none;
+    width: 87px;
+    height: 43px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+section#convite .container span {
+    visibility: hidden;
 }
 
 footer {
-    height: 93px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: #2a0157;
-    text-align: center;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 100;
-    letter-spacing: 0.5px;
+    color: #fff;
     margin-top: 3px;
-    line-height: 100px;
+    font-size: 18px;
+}
+
+footer .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media (max-width: 600px) {
+    header {
+        margin-bottom: -100px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header h1 {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    section#topo .container {
+        padding: 10%;
+    }
+
+    section#conheca .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section#conheca .container .caixa {
+        padding: 10px;
+    }
+
+    section#conheca .container .caixa a {
+        width: 100%;
+    }
+
+    section#convite .container form {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section#convite .container input {
+        width: 80%;
+        font-size: 15px;
+    }
 }

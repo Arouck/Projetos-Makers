@@ -5,65 +5,71 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="normalize.css">
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet">
         <link rel="stylesheet" href="estilo.css">
+        <meta name="viewport" content="width:device-width, initial-scale=1">
+
         <title>Titum</title>
-        
     </head>
     <body>
-        
-        <section id="Primeira">
-            <header>
-                <div id="container">
-                    <img src="logo.png">
-                    <nav>
-                        <a href="#Segunda"><span class="conheca">Conheça</span></a>
-                        <a href="#Terceira"><span class="depoimentos">Depoimentos</span></a>
-                        <a href="#Quarta"><div>Convite</div></a>
-                    </nav>
-                </div>
-            </header>
+        <header>
+            <div class="container">
+                <h1>
+                    <span>Titum</span>
+                </h1>
 
-            <h1 id="Titulo">Conheça Titum</h1>
-            <span id="Sub">A nova moda do momento.</span>
-            <a href="#Segunda"><div id="Saiba">Saiba mais</div></a>
-        </section>
-
-        <section id="Segunda">
-            <img src="fashion-teen-girl-listen-music-mp-relax-happy-dancing-headphones-player-fresh-energetic-young-woman-blue-background-39146698.png">
-            <h2>Afinal, o que é o Titum?</h2>
-            <div class="paragrafo">
-                <p>Titum é um novo movimento, que veio para ficar. Lançado no último evento musical de maior prestígio mundial, Titum começou a fazer parte da cultura pop.</p>
+                <nav>
+                    <ul>
+                        <li><a href="#conheca">Conheça</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="#convite">Convite</a></li>
+                    </ul>
+                </nav>
             </div>
-            <a href="#Quarta">
-                <div id="quero">Quero Titum</div>
-            </a>
+        </header>
+
+        <section id="topo">
+            <div class="container">
+                <div class="chamada">
+                    <h2>Conheça Titum</h2>
+                    <p>A nova moda do momento.</p>
+                    <a href="#conheca" class="botao">Saiba mais</a>
+                </div>
+            </div>
         </section>
-            
-        <section id="Terceira">
-            <div id="caixa">
+
+        <section id="conheca">
+                <div class="container">
+                    <img src="fashion-teen-girl-listen-music-mp-relax-happy-dancing-headphones-player-fresh-energetic-young-woman-blue-background-39146698.png">
+                    <div class="caixa">
+                        <h2>Afinal, o que é o Titum?</h2>
+                        <p>Titum é um novo movimento, que veio para ficar. Lançado no último evento musical de maior prestígio mundial, Titum começou a fazer parte da cultura pop.</p>
+                        <a href="#convite" class="botao">Quero Titum</a>
+                    </div>
+                </div>
+        </section>
+
+        <section id="depoimentos">
+            <div class="container">
                 <img src="woman-with-headphones-listening-to-music_21288797.png">
-                <div class="tudo">
-                    <p>“Titum foi sem dúvida a melhor coisa que aconteceu na minha vida. Eu não sei como consegui viver sem o Titum até hoje”
-                        <h3 class="pessoa"> 
-                            Cláudia Santos
-                        </h3>
-                    </p>
-                </div>
+                <p>“Titum foi sem dúvida a melhor coisa que aconteceu na minha vida. Eu não sei como consegui viver sem o Titum até hoje” <br><strong>Cláudia Santos</strong></p>
+
             </div>
         </section>
 
-        <section id="Quarta">
-            <div>
-                <input type="email" placeholder="Receba um convite no email informado aqui">
-                <button>
-                    <img src="botao-convite.png">
-                </button>
+        <section id="convite">
+            <div class="container">
+                <form action="">
+                    <input type="email" placeholder="Receba um convite no email informado aqui">
+                    <button><span>Enviar</span></button>
+                </form>
             </div>
         </section>
 
         <footer>
-            <span>© 2016 Titum - Todos os direitos reservados.</span>
+            <div class="container">
+                <p>© 2016 Titum - Todos os direitos reservados.</p>
+            </div>
         </footer>
     </body>
 </html>
